@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
     bucket = "terrateam-demo-state"
-    prefix = "/infrastructure/production/compute/tf.state"
+    prefix = "/tarmac/production/compute/tf.state"
   }
 }
 
