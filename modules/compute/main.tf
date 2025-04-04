@@ -1,7 +1,7 @@
 resource "google_compute_instance" "this" {
   count        = var.instance_count
   name         = var.instance_name
-  machine_type = "e2-small"
+  machine_type = "e2-medium"
   zone         = var.instance_zone
   boot_disk {
     initialize_params {
