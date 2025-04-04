@@ -112,4 +112,4 @@ parallel_runs: 3
 
 # Automatic Module Discovery
 indexer:
-  enabled: true
+  enabled: false
