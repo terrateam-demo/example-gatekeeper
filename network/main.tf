@@ -1,5 +1,5 @@
 variable "vpc_cidr" {
-  default = "10.1.0.0/24"
+  default = "10.1.0.1/24"
 }
 
 resource "null_resource" "example_vpc" {
