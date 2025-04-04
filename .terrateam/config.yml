@@ -36,6 +36,11 @@ workflows:
         workload_identity_provider: "projects/811565105692/locations/global/workloadIdentityPools/terrateam-pool/providers/terrateam-provider"
       - type: init
       - type: plan
+      - type: conftest
+        gate:
+          token: denied-resources
+          any_of: ["team:engineering"]
+          any_of_count: 1
     apply:
       - type: oidc
         provider: gcp
