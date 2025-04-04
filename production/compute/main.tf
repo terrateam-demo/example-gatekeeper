@@ -17,3 +17,9 @@ module "staging_compute_instance" {
   region          = "us-central1"
   provider_zone   = "us-central1-c"
 }
+
+resource "null_resource" "foobar" {
+  provisioner "local-exec" {
+    command = "echo this is a null resource"
+  }
+}
