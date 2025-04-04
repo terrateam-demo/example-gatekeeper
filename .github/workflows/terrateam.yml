@@ -25,7 +25,7 @@
      permissions: # Required to pass credentials to the Terrateam action
        id-token: write
        contents: read
-     runs-on: terrateam-self-hosted
+     runs-on: ubuntu-latest
      timeout-minutes: 1440
      name: Terrateam Action
      environment: '${{ github.event.inputs.environment }}'
