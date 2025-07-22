@@ -20,6 +20,6 @@ module "staging_compute_instance" {
 
 resource "null_resource" "foobar" {
   provisioner "local-exec" {
-    command = "echo this is a null resource"
+    command = "echo change is to force a terrateam run in this dir"
   }
 }
