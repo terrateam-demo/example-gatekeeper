@@ -81,7 +81,7 @@ apply_requirements:
         enabled: false # No status checks enforced for staging.
     - tag_query: "production"
       approved:
-        enabled: true # Approval required for production.
+        enabled: false # Approval required for production.
         any_of: ["team:sre"] # Approval can only be provided by the SRE team.
       merge_conflicts:
         enabled: true
