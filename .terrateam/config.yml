@@ -98,7 +98,7 @@ apply_requirements:
 # Automerge (`automerge`)
 # Configures automatic merging behavior after successful applies.
 automerge:
-  enabled: true
+  enabled: false
   delete_branch: false # Retains the branch after merging.
 
 # Engine (`engine`)
