@@ -23,3 +23,9 @@ resource "null_resource" "foobar" {
     command = "echo change is to force a terrateam run in this dir"
   }
 }
+
+resource "null_resource" "foobar1" {
+  provisioner "local-exec" {
+    command = "echo this is a null resource"
+  }
+}
