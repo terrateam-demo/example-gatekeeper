@@ -37,6 +37,7 @@ workflows:
       - type: init
       - type: plan
       - type: conftest
+        visible_on: always
         gate:
           token: denied-resources
           any_of: ["team:engineering"]
